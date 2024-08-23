@@ -3570,14 +3570,6 @@ function Library:CreateWindow(...)
             end);
         end;
 
-        RenderStepped:Connect(function()
-            if getgenv()["AlwaysCustomCursor"] then
-                Cursor.Visible = true
-                Cursor.Position = UDim2.new(0, InputService:GetMouseLocation().X - 17, 0, InputService:GetMouseLocation().Y - 17)
-                InputService.MouseIconEnabled = false;
-            end
-        end)
-
         for _, Desc in next, Outer:GetDescendants() do
             local Properties = {};
 
