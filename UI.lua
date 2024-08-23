@@ -3570,6 +3570,12 @@ function Library:CreateWindow(...)
             end);
         end;
 
+        RenderStepped:Connect(function()
+            if getgenv()["AlwaysCustomCursor"] then
+                Cursor.Visible = true
+            end
+        end)
+
         for _, Desc in next, Outer:GetDescendants() do
             local Properties = {};
 
