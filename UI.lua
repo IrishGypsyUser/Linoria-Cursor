@@ -3573,6 +3573,7 @@ function Library:CreateWindow(...)
         RenderStepped:Connect(function()
             if getgenv()["AlwaysCustomCursor"] then
                 Cursor.Visible = true
+                Cursor.Position = UDim2.new(0, InputService:GetMouseLocation().X - 17, 0, InputService:GetMouseLocation().Y - 17)
             end
         end)
 
