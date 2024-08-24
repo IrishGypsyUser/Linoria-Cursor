@@ -5,12 +5,13 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default'] = { 1, httpService:JSONDecode('{"FontColor":"BFBFBF","MainColor":"0F0F0F","AccentColor":"929667","BackgroundColor":"1B1B1B","OutlineColor":"0B0B0B"}') },
-		['GameSense'] = { 2, httpService:JSONDecode('{"FontColor":"d3d3d3","MainColor":"101010","AccentColor":"9CB819","BackgroundColor":"111111","OutlineColor":"2D2D2D"}') },
-		['Comet.pub'] = { 3, httpService:JSONDecode('{"FontColor":"d3d3d3","MainColor":"0F0F0F","AccentColor":"5D589D","BackgroundColor":"0F0F0F","OutlineColor":"191919"}') },
-		['Tokyohook.cc'] = { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"433e58"}') },
-		['pandahook.cc'] = { 5, httpService:JSONDecode('{"FontColor":"AEAEAE","MainColor":"0F0F0F","AccentColor":"30406A","BackgroundColor":"0F0F0F","OutlineColor":"171717"}') },
-		['Fag.lua'] = { 6, httpService:JSONDecode('{"FontColor":"c5c5c5","MainColor":"0F0F0F","AccentColor":"ffc6fe","BackgroundColor":"0f0f0f","OutlineColor":"191919"}') },
+		['Default'] = { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"0055ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
+		['Swamp'] = { 2, httpService:JSONDecode('{"FontColor":"BFBFBF","MainColor":"0F0F0F","AccentColor":"929667","BackgroundColor":"1B1B1B","OutlineColor":"0B0B0B"}') },
+		['GameSense'] = { 3, httpService:JSONDecode('{"FontColor":"d3d3d3","MainColor":"101010","AccentColor":"9CB819","BackgroundColor":"111111","OutlineColor":"2D2D2D"}') },
+		['Comet.pub'] = { 4, httpService:JSONDecode('{"FontColor":"d3d3d3","MainColor":"0F0F0F","AccentColor":"5D589D","BackgroundColor":"0F0F0F","OutlineColor":"191919"}') },
+		['Tokyohook.cc'] = { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"433e58"}') },
+		['pandahook.cc'] = { 6, httpService:JSONDecode('{"FontColor":"AEAEAE","MainColor":"0F0F0F","AccentColor":"30406A","BackgroundColor":"0F0F0F","OutlineColor":"171717"}') },
+		['Fag.lua'] = { 7, httpService:JSONDecode('{"FontColor":"c5c5c5","MainColor":"0F0F0F","AccentColor":"ffc6fe","BackgroundColor":"0f0f0f","OutlineColor":"191919"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
