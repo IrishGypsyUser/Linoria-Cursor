@@ -12,8 +12,6 @@ local ThemeManager = {} do
 		['pandahook'] = { 5, httpService:JSONDecode('{"FontColor":"AEAEAE","MainColor":"0F0F0F","AccentColor":"30406A","BackgroundColor":"0F0F0F","OutlineColor":"171717"}') },
 		['Discord'] = { 6, httpService:JSONDecode('{"MainColor":"2d2f35","AccentColor":"5065f2","OutlineColor":"323232","BackgroundColor":"202124","FontColor":"ffffff"}') },
 		['Comet'] = { 7, httpService:JSONDecode('{"FontColor":"d3d3d3","MainColor":"0F0F0F","AccentColor":"5D589D","BackgroundColor":"0F0F0F","OutlineColor":"191919"}') },
-		['Fag'] = { 8, httpService:JSONDecode('{"FontColor":"c5c5c5","MainColor":"0F0F0F","AccentColor":"ffc6fe","BackgroundColor":"0f0f0f","OutlineColor":"191919"}') },
-
 	}
 
 	function ThemeManager:ApplyTheme(theme)
