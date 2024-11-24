@@ -23,27 +23,6 @@ local Options = {};
 getgenv().Toggles = Toggles;
 getgenv().Options = Options;
 
-do 
-	-- 
-	writefile("smallest_pixel.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyTiny.ttf"))
-	-- 
-	local smallest_pixel = {
-		name = "SmallestPixel7",
-		faces = {
-			{
-				name = "Regular",
-				weight = 400,
-				style = "normal",
-				assetId = getcustomasset("smallest_pixel.ttf")
-			}
-		}
-	}
-
-	writefile("menu_font.font", game:GetService("HttpService"):JSONEncode(smallest_pixel))
-
-	getgenv().menu_font = Font.new(getcustomasset("menu_font.font"), Enum.FontWeight.Regular)
-end;
-
 local Library = {
     Registry = {};
     RegistryMap = {};
@@ -58,7 +37,7 @@ local Library = {
     RiskColor = Color3.fromRGB(255, 50, 50),
 
     Black = Color3.new(0, 0, 0);
-    Font = getgenv().menu_font,
+    Font = Enum.Font.Code,
 
     OpenedFrames = {};
     DependencyBoxes = {};
